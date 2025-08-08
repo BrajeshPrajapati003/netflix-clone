@@ -7,13 +7,13 @@ const TitleCards = ({title, category}) => {
 
   const cardsRef = useRef();
 
-  const handWheel = (event) =>{
+  const handleWheel = (event) =>{
     event.preventDefault;
     cardsRef.current.scrollLeft += event.deltaY;
   }
 
   useEffect(()=>{
-    cardsRef.current.addEventListener('wheel', handWheel);
+    cardsRef.current.addEventListener('wheel', handleWheel);
   }, [])
 
   return (
