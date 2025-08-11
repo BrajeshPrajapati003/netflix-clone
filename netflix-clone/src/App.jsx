@@ -3,6 +3,7 @@ import Home from './pages/Home/Home'
 import { Routes, Route } from 'react-router-dom'
 import Login from './pages/Login/Login'
 import Player from './pages/Player/Player'
+import { onAuthStateChanged } from 'firebase/auth'
 
 const App = () => {
   return (
